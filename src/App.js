@@ -8,7 +8,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Introduce />} />
-          <Route path='/' element={<Quiz />} />
+          <Route path='/quiz/:difficulty/:amount' element={<Quiz />} />
         </Routes>
       </Router>
     </div>
