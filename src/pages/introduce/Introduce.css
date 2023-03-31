@@ -36,3 +36,14 @@
     margin-top: 10px;
     cursor: pointer;
 }
+
+.level{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    color: gray;
+    font-size: 17px;
+    font-weight: bold;
+}
+
