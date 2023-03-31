@@ -8,7 +8,7 @@
 }
 
 .introduce-container{
-    max-width: 600px;
+    max-width: 650px;
     width: 100%;
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     display: flex;
@@ -23,5 +23,16 @@
 }
 
 .introduce-btn{
-
+    width: 400px;
+    height: 50px;
+    font-size:17px;
+    font-weight: bold;
+    background-color: #443296;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
 }
