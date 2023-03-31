@@ -23,8 +23,12 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, 
     return (
         <div className='questionCard'>
 
+
+        <div className='questionCard-timer'>{timer}</div>
+
+
             {/* to show current count of question like 5/10 */}
-            <div> {count + 1} / 10 - {questionsData[count]?.question}</div>
+            <div className='questionCard-title'> {count + 1} / 10 - {questionsData[count]?.question}</div>
 
 
 
