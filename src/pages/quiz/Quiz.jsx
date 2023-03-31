@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Quiz.css'
 import { useParams } from 'react-router-dom'
 import * as api from '../../api/api'
+import QuestionCard from '../../components/questionCard/QuestionCard'
 
 const Quiz = () => {
 
@@ -10,8 +11,11 @@ const Quiz = () => {
   //useEffectle gelen datayı ekran tutmak için
   const [questionsData, setQuestionsData] = useState([])
 
+  const [score, setScore] = useState(0)
+  const [count, setCount] = useState(0)
 
-
+  //if true, go next page
+  const [modal, setModal] = useState(false)
 
   //fecthQuizData'yı Quiz.jsx üzerinden useEffect kullanarak çeker
   useEffect(() => {
@@ -23,14 +27,21 @@ const Quiz = () => {
 
     getData();
   }, [])
-
   console.log(questionsData, "questionsData");
 
 
 
   return (
     <div className='quiz'>
-      {difficulty} - {amount}
+      <QuestionCard
+        questionsData={questionsData}
+        score={score}
+        setScore={setScore}
+        count={count}
+        setCount={setCount}
+        modal={modal}
+        setModal={setModal}
+      />
     </div>
   )
 }
