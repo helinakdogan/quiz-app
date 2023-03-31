@@ -1,6 +1,6 @@
 # Quiz App
 
-React quiz app using api to get new questions. Each question has a timer. Also, it calculates your final score according to your correct answers.
+React quiz app using api to get new questions. User can change difficulty level of the quiz. Each question has a timer. Also, it calculates your final score according to your correct answers.
 
 ![Ekran Görüntüsü (214)](https://user-images.githubusercontent.com/85782760/229140895-0ba9ddaf-8b58-434f-8254-9cb8f7375618.png)
 
