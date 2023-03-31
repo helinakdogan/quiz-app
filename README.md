@@ -1,3 +1,14 @@
+# Quiz App
+
+React quiz app using api to get new questions. Each question has a timer. Also, it calculates your final score according to your correct answers.
+
+![Ekran Görüntüsü (214)](https://user-images.githubusercontent.com/85782760/229140895-0ba9ddaf-8b58-434f-8254-9cb8f7375618.png)
+
+![Ekran Görüntüsü (215)](https://user-images.githubusercontent.com/85782760/229140916-91e3b28a-619e-435f-91c2-3a7dde8b6301.png)
+
+![Ekran Görüntüsü (216)](https://user-images.githubusercontent.com/85782760/229140936-0e0ef85c-2c33-4cda-b1e8-79ea06610d6c.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
