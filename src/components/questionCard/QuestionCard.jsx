@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './QuestionCard.css'
 
 const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, setModal }) => {
@@ -17,14 +17,40 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, 
         //this will show if it users answer matches with true answer
         const checkAnswer = e.currentTarget.value == questionsData[count]?.correct_answer;
         console.log(checkAnswer);
+
+        if (checkAnswer) {
+            setScore(score + 10)
+        }
+        setCount(count + 1)
+        if (count == 9) setModal(true)  //this will render a different page
+        setTimer(30);
     }
+
+    useEffect(() => {
+        //callback
+        const interval = setInterval(() => {
+            if (timer > 0) {
+                setTimer(timer - 1);
+            }
+            if (timer == 0 && count < 10) {
+                setCount(count + 1);
+                setTimer(30);
+            } else if (count >= 10) {
+                setModal(true);
+            }
+        }, 1000)
+
+        return () => {
+            clearInterval(interval);
+        }
+    }, [timer])
 
 
     return (
         <div className='questionCard'>
 
 
-        <div className='questionCard-timer'>{timer}</div>
+            <div className='questionCard-timer'>{timer}</div>
 
 
             {/* to show current count of question like 5/10 */}
