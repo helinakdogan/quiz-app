@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 
 const Introduce = () => {
 
-  //difficulty options
+  //difficulty level options
   const difficulty = ["easy", "medium", "hard"];
 
   //for props
