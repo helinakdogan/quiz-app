@@ -6,18 +6,17 @@ import { useNavigate } from 'react-router-dom'
 
 const Introduce = () => {
 
-  //difficulty level options
+  //we keep all difficulty levels in an array 
   const difficulty = ["easy", "medium", "hard"];
 
-  //for props
+  //this will use when user change the value of difficulty
   const [difficultyChange, setDifficultyChange] = useState('');
 
   //to direct quiz page
   const navigate = useNavigate();
   const TOTAL_QUESTIONS = 10;
 
-
-
+  //this is for checking on console if current difficulty level really changes when user choose different one
   console.log(difficultyChange, "difficultyChange");
 
   const startQuiz = () => {
