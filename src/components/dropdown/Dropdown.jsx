@@ -9,7 +9,7 @@ const Dropdown = ({ data, setDifficultyChange }) => {
       {/* When user selects an option, it will become current option */}
       <select onChange={e => setDifficultyChange(e.target.value)}  name="" id="">
         {
-          //to show array on screen
+          // mapping data to show array on screen
           data.map((dt, i) => (
             <option value={dt}> {dt} </option>
           ))
