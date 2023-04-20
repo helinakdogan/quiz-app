@@ -1,6 +1,8 @@
 import React from 'react'
 import './Dropdown.css'
 
+// Selecting level and showing it on dropdown 
+
 
 // First it gets some data from Introduce page
 const Dropdown = ({ data, setDifficultyChange }) => {
