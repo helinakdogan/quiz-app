@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import './QuestionCard.css'
 
+// 1 -> get questions
+// 2 -> increase score according to correct answers
+// 3 -> count number of question
+// 4 -> add timer
+
+
+
+
 const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, setModal }) => {
 
     const [timer, setTimer] = useState(30);
-
-
-
-
-
 
     const approvedChoice = (e) => {
         //this will show which answer user chose
@@ -26,6 +29,7 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, 
         setTimer(30);
     }
 
+    // 4.
     useEffect(() => {
         //callback
         const interval = setInterval(() => {

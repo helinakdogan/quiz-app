@@ -26,6 +26,32 @@
     background-color: rgba(91,99,187,1);
 }
 
+.questionCard green-btn{
+    width: 48%;
+    height: 43px;
+    margin: .3rem;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: green;
+}
+
+.questionCard red-btn{
+    width: 48%;
+    height: 43px;
+    margin: .3rem;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: red;
+}
+
 .questionCard button:hover{
     background-color: #703ee6;
 }
