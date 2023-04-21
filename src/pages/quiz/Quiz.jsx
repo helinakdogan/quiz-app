@@ -6,8 +6,8 @@ import QuestionCard from '../../components/questionCard/QuestionCard'
 import Modal from '../../components/modal/Modal'
 
 
-// 1 -> get questions data using api
-// 2 -> create UseState for score counter
+// 1 -> get questions using api
+// 2 -> create UseState for score and question counter
 // 3 -> create UseState for modal which will be final page 
 
 
@@ -20,7 +20,7 @@ const Quiz = () => {
   // 1. This is for displaying data which come with useEffect
   const [questionsData, setQuestionsData] = useState([])
 
-  // 2. This will be score counter
+  // 2. This will be score and question number counter
   const [score, setScore] = useState(0)
   const [count, setCount] = useState(0)
 

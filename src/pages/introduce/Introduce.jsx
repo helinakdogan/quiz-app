@@ -4,24 +4,24 @@ import Dropdown from '../../components/dropdown/Dropdown'
 import { useNavigate } from 'react-router-dom'
 
 
-// 1 -> keeping difficulty levels and sending it to Dropdown
+// 1 -> keeping difficulty levels in array and sending it to Dropdown
 
 // 2 -> to go Quiz page after choosing difficulty level
 
 
 const Introduce = () => {
 
-  // 1. we keep all difficulty levels in an array 
+  // 1. We keep all difficulty levels in an array 
   const difficulty = ["easy", "medium", "hard"];
 
-  // 1. this will use when user change the value of difficulty
+  // 1. This will use when user change the value of difficulty
   const [difficultyChange, setDifficultyChange] = useState('');
 
-  // 2. to direct quiz page, first we need to define a navigate function and total number of questions
+  // 2. To direct quiz page, first we need to define a navigate function and total number of questions
   const navigate = useNavigate();
   const TOTAL_QUESTIONS = 10;
 
-  // 1. this is for checking on console if current difficulty level really changes when user choose different one
+  // 1. This is for checking on console if current difficulty level really changes when user choose different one
   console.log(difficultyChange, "difficultyChange");
 
   const startQuiz = () => {
