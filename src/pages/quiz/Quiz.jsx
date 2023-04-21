@@ -5,9 +5,12 @@ import * as api from '../../api/api'
 import QuestionCard from '../../components/questionCard/QuestionCard'
 import Modal from '../../components/modal/Modal'
 
+
 // 1 -> get questions data using api
 // 2 -> create UseState for score counter
 // 3 -> create UseState for modal which will be final page 
+
+
 
 const Quiz = () => {
 
