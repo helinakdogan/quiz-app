@@ -14,7 +14,7 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, 
     // 4. First value of timer will be 30
     const [timer, setTimer] = useState(30);
 
-
+    
     const approvedChoice = (e) => {
         // 1. This will show which answer user chose on console
         console.log(e.currentTarget.value);
@@ -39,9 +39,11 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, 
         setTimer(30);
     }
 
+
+
     // 4. When page is loaded, timer will start decreasing
     useEffect(() => {
-        //callback
+        // callback
         const interval = setInterval(() => {
             if (timer > 0) {
                 // 4. It will decrease till zero
