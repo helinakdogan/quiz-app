@@ -5,7 +5,7 @@ import './QuestionCard.css'
 // 2 -> increase score according to correct answers
 // 3 -> count number of question
 // 4 -> add timer
-// 5 -> going modal
+// 5 -> to go modal
 
 
 
@@ -19,7 +19,7 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, 
         // 1. This will show which answer user chose on console
         console.log(e.currentTarget.value);
 
-        // 1. this will show if users answer matches with correct answer and return boolean
+        // 1. This will show if users answer matches with correct answer and return boolean
         const checkAnswer = e.currentTarget.value == questionsData[count]?.correct_answer;
         console.log(checkAnswer);
 
@@ -44,17 +44,24 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, 
         //callback
         const interval = setInterval(() => {
             if (timer > 0) {
+                // 4. It will decrease till zero
                 setTimer(timer - 1);
             }
+
             if (timer == 0 && count < 10) {
+                // 3. If time is up, increase count 1 because it will go next question
                 setCount(count + 1);
+                // 4. Reset timer
                 setTimer(30);
+
             } else if (count >= 10) {
+                // 5. After last question, don't show timer
                 setModal(true);
             }
         }, 1000)
 
         return () => {
+            // 4. This is important for counting properly
             clearInterval(interval);
         }
     }, [timer])

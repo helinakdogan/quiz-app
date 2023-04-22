@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom'
 
 
 // 1 -> keeping difficulty levels in array and sending it to Dropdown
-
 // 2 -> to go Quiz page after choosing difficulty level
 
 
